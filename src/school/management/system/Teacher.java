@@ -7,7 +7,7 @@ public class Teacher {
     private int salary;
 
 
-    public teacher(int id, int name, int salary) {
+    public Teacher(int id, String name, int salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
