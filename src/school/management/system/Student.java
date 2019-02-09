@@ -24,9 +24,10 @@ public class Student {
     }
 
     //keep adding the fees to feesPaid field
-    public void updateFeesPaid(int fees) {
+    public void payFees(int fees) {
         //feesPaid = feesPaid + fees;
         feesPaid += fees;
+        School.updateTotalMoneyEarned(feesPaid);
     }
 
     public int getId() {
@@ -47,5 +48,10 @@ public class Student {
 
     public int getFeesTotal() {
         return feesTotal;
+    }
+
+    //return the remaining fees
+    public int getRemainingFees() {
+        return feesTotal -= feesPaid;
     }
 }
