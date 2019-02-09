@@ -17,7 +17,7 @@ Navigate to System folder and run:
 School:
 - teachers
 - students
-- total money spent (teachers salary)
+- total money spent (only considering teachers salary)
 - total money earned
 
 Teacher:
