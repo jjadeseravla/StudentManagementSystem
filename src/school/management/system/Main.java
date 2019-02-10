@@ -6,9 +6,9 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        Teacher missJones = new Teacher(1, "missJones", 500);
-        Teacher mrSmith = new Teacher(2, "mrSmith", 700);
-        Teacher mrBrown = new Teacher(3, "mrBrown", 600);
+        Teacher missJones = new Teacher(1, "missJones", 500, 300);
+        Teacher mrSmith = new Teacher(2, "mrSmith", 700, 300);
+        Teacher mrBrown = new Teacher(3, "mrBrown", 600, 300);
 
         List<Teacher> teacherList = new ArrayList<>();
         teacherList.add(missJones);
@@ -25,7 +25,7 @@ public class Main {
         studentList.add(rob);
         studentList.add(lily);
 
-        tom.payFees(fees: 200);
+        //tom.payFees(fees: 200);
 
         School riverdale = new School(teacherList, studentList);
         System.out.println("riverdale has earned £: " + riverdale.getTotalMoneyEarned());
