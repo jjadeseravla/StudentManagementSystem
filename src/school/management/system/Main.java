@@ -25,8 +25,6 @@ public class Main {
         studentList.add(rob);
         studentList.add(lily);
 
-        //tom.payFees(200);
-
         School riverdale = new School(teacherList, studentList);
         tom.payFees(200);
         System.out.println("riverdale has earned £: " + riverdale.getTotalMoneyEarned());
