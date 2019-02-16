@@ -12,7 +12,7 @@ public class School {
     private static int totalMoneyEarned;
     private static int totalMoneySpent;
 
-    //created when a new school object is created
+    //created when a new school object is created.  new school object requires you to pass a list of students and a list of teachers
     public School(List<Teacher> teachers, List<Student> students) {
         this.teachers = teachers;
         this.students = students;
