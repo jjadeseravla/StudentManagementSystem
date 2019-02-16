@@ -28,6 +28,10 @@ public class Teacher {
         return this.salary;
     }
 
+    public int getSalaryEarned() {
+        return this.salaryEarned;
+    }
+
     //set the salary
     public void setSalary(int salary) {
         this.salary = salary;

@@ -26,9 +26,18 @@ public class Main {
         studentList.add(lily);
 
         School riverdale = new School(teacherList, studentList);
-        tom.payFees(200);
-        System.out.println("riverdale has earned £: " + riverdale.getTotalMoneyEarned());
-        System.out.println("blabla");
+        tom.payFees(600);
+        rob.payFees(1000);
+        System.out.println("riverdale has earned £" + riverdale.getTotalMoneyEarned());
+        //missJones.getSalary();
+        missJones.receiveSalary(missJones.getSalary());
+        System.out.println("miss Jones current salary is £" + missJones.getSalary() + " The school now has £" + riverdale.getTotalMoneyEarned() + " left.");
+        mrSmith.receiveSalary(mrSmith.getSalary());
+        System.out.println("mr Smith current salary is £" + mrSmith.getSalary() + " The school now has £" + riverdale.getTotalMoneyEarned() + " left.");
+//        missJones.receiveSalary(35000);
+//        System.out.println("miss Jones has a salary of £" + missJones.getSalaryEarned());
+
+        System.out.println(tom);
     }
 
 }
